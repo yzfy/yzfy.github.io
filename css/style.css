@@ -1,0 +1,39 @@
+.jp-container{    /* 框内 */
+    width:188px;
+    height:217px;
+    position:relative;
+    background:#fff;
+    border:0px solid #D8DFEA;
+	float:left;
+}
+.jp-container a{
+    padding:0px 0px;
+    display:block;
+    line-height: ; /* 行距 */
+    background-color: #FFF1AA;
+
+    border-top:1px solid #D8DFEA;
+}
+.jp-container a:first-child{
+    border-top:none;
+}
+.jp-container a:last-child{
+    border-bottom:none;
+}
+.jp-container a:hover{   /* 触碰改色，隐藏 */
+   background:
+   border-bottom-color:
+}
+.jp-container a h3{ 
+    font-size:22px;
+    font-weight:bold;
+    padding:;
+	text-transform:uppercase;
+}
+.jp-container a img{
+    float:left;
+    margin:5px 10px 0px 0px;
+    padding:;
+    background:#fff;
+    border:1px solid #D8DFEA;
+}
