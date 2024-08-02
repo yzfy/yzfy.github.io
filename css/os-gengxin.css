@@ -1,0 +1,84 @@
+/*
+os-gengxin
+*/
+
+.os-gengxin > .os-scrollbar {
+    padding: 0;
+}
+.os-gengxin > .os-scrollbar-horizontal {
+    right: 20px;
+    height: 20px;
+	
+}
+.os-gengxin > .os-scrollbar-vertical {
+    bottom: 20px;
+    width: 16px;    /*!     轨道宽       */
+	
+}
+.os-gengxin.os-host-rtl > .os-scrollbar-horizontal {
+    left: 20px;
+    right: 0;
+
+}
+.os-gengxin > .os-scrollbar-corner {
+    height: 20px;
+    width: 20px;
+    background-color: green;          /*!     底部缩放方块       */
+}
+.os-gengxin > .os-scrollbar > .os-scrollbar-track {
+    background: ;    /*!     轨道       */
+	width: 16px;
+}
+.os-gengxin > .os-scrollbar-horizontal > .os-scrollbar-track:before,
+.os-gengxin > .os-scrollbar-vertical > .os-scrollbar-track:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: blue;              /*!     轨迹线       */
+}
+.os-gengxin > .os-scrollbar-horizontal > .os-scrollbar-track:before {
+    left: 3px;
+    right: 3px;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+}
+.os-gengxin > .os-scrollbar-vertical > .os-scrollbar-track:before {
+    top: 3px;
+    bottom: 3px;
+    width: 2px;
+    left: 50%;
+    margin-left: -1px;
+}
+.os-gengxin > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle {
+    background: ;              /*!     滚动条       */
+}
+.os-gengxin > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #00bbff left top no-repeat;             /*!     滚动条内部  触碰放大     */
+    border-radius: ;  /*! 圆的原因 100%   border-radius是一种缩写方法，如果”/”前后的值都存在，那么”/”前面的值设置其水平半径，”/”后面的值设置其垂直半径。  */
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    transform: scale(1);
+}
+.os-gengxin > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle:hover:before,
+.os-gengxin > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle.active:before {
+    transform: scale(1.2);
+}
+.os-gengxin > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle {
+    height: 100%;
+    min-width: 20px;
+    max-width: 20px;
+}
+.os-gengxin > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+    width: 100%;
+    min-height: 16px;
+    max-height: 16px;                 /*!     滚动条     */
+}
+.os-gengxin.os-host-transition > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle:before {
+    transition: transform 0.3s;
+}
